@@ -22,5 +22,35 @@ export const useStyles = makeStyles({
   },
   grid: {
     height: '100vh',
-  }
+    width: '100vw',
+    display: 'grid',
+    gridTemplateColumns: '1fr 1fr',
+    gap: '0px 0px',
+    gridTemplateAreas: `"leftSide top-right ."
+      "leftSide bottom-right ."`,
+    gridGap: '10px',
+  },
+  leftSide: {
+    gridArea: 'leftSide',
+    display: 'flex',
+    alignItems: 'center',
+    width: '100%',
+    justifyContent: 'center',
+  },
+  topRight: {
+    gridArea: 'top-right',
+    display: 'flex',
+    width: '100%',
+    height: '100%',
+    justifyContent: 'center',
+    alignItems: 'end'
+  },
+  bottomRight: {
+    display: 'flex',
+    width: '100%',
+    height: '100%',
+    alignItems: 'start',
+    justifyContent: 'center',
+    gridArea: 'bottom-right',
+  },
 })
