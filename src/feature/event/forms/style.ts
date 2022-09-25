@@ -38,7 +38,7 @@ export const useStyles = makeStyles({
   },
   cancel: {
     textDecoration: 'none',
-    color: '#919191',
+    color: '#BDBDBD',
   },
   createButton: {
     display: 'flex',
@@ -79,7 +79,7 @@ export const BootstrapInput: any = styled(InputBase)(({ theme }: { theme: Theme 
   '& .MuiInputBase-input': {
     borderRadius: 10,
     position: 'relative',
-    backgroundColor: theme.palette.mode === 'light' ? '#dddddd' : '#2b2b2b',
+    backgroundColor: theme.palette.mode === 'light' ? '#EDE5FF' : '#2b2b2b',
     fontSize: 24,
     width: '100%',
     padding: '10px 12px',

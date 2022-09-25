@@ -2,7 +2,7 @@ import React from 'react';
 import Box from '@mui/material/Box';
 import Typography from '@mui/material/Typography';
 import { useStyles } from './style';
-import { Forms } from '../components/Forms';
+import { Forms } from '../forms';
 import { Link } from 'react-router-dom';
 import { Button } from '../../../components/Button';
 
@@ -16,7 +16,7 @@ export const EventCreate = () => {
       </Box>
       <Forms />
       <Box className={classes.createButton}>
-        <Button title='Create' width={1}/>
+        <Button title='Next' width={1}/>
       </Box>
     </Box>
   )

@@ -1,16 +1,15 @@
 import React from 'react';
 import FormControl from '@mui/material/FormControl';
-import { BootstrapInput, useStyles } from './style'
+import { BootstrapInput, useStyles } from './style';
 import Box from '@mui/material/Box';
 import { Typography } from '@mui/material';
-
 
 export const Forms = () => {
   const classes = useStyles();
   const handleUploadClick = () => {}
   return (
     <Box className={classes.eventCreate}>
-      <FormControl variant="standard" className={classes.form}>
+      <Box className={classes.form}>
         <Box className={classes.formElement}>
           <Typography fontWeight={700} fontSize={20} className={classes.label}>
             🎉 My event is called
@@ -47,7 +46,7 @@ export const Forms = () => {
           </Typography>
           <BootstrapInput/>
         </Box>
-      </FormControl>
+      </Box>
       <Box className={classes.uploadImage}>
         <input
           id="contained-button-file"
@@ -64,7 +63,7 @@ export const Forms = () => {
           <img
             className={classes.image}
             draggable={false}
-            src={require('../../../../assets/image-upload.png')}
+            src={require('../../../assets/image-upload.png')}
             width='500px'
             height='500px'
             alt='upload'

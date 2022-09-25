@@ -6,7 +6,7 @@ import {ReactComponent as CreateIMG} from '../../../assets/create-event.svg';
 import { useStyles } from './style'
 import { Link } from 'react-router-dom';
 
-export const EventList = () => {
+export const EventLanding = () => {
   const classes = useStyles();
   return(
     <Box className={classes.root} sx={{ flexGrow: 1 }}>
