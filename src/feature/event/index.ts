@@ -1,2 +1,2 @@
-export { Event } from './Event';
-export { Create } from './Create';
+export { EventList } from './layouts/EventList';
+export { EventCreate } from './layouts/EventCreate';
