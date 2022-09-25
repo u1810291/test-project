@@ -10,7 +10,7 @@ function App() {
       <Routes>
         <Route path='/' element={<Layout/>}>
           <Route index element={<EventList/>}/>
-          <Route path='create' element={<EventCreate/>}/>
+          <Route path='event/create' element={<EventCreate/>}/>
           <Route path="*" element={<Navigate replace to='/'/>} />
         </Route>
       </Routes>

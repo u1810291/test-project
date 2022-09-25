@@ -1,8 +1,10 @@
 import React from 'react';
 import { Button } from '../../../components/Button';
 import Box from '@mui/material/Box';
+import Typography from '@mui/material/Typography';
 import {ReactComponent as CreateIMG} from '../../../assets/create-event.svg';
 import { useStyles } from './style'
+import { Link } from 'react-router-dom';
 
 export const EventList = () => {
   const classes = useStyles();
@@ -13,10 +15,19 @@ export const EventList = () => {
           <CreateIMG />
         </Box>
         <Box className={classes.topRight}>
-          Imagine if had events.
+          <Box>
+            <Typography fontWeight={700} variant='h2' align='right' className={classes.title}>Imagine if</Typography>
+            <Typography fontWeight={700} variant='h2' align='right' className={classes.titleCustom}> Snapchat </Typography>
+            <Typography fontWeight={700} variant='h2' align='right' className={classes.title}>had events.</Typography>
+            <Typography fontWeight={300} align='right' className={classes.description}>Easily host and share events with your friends across any social media.</Typography>
+          </Box>
         </Box>
         <Box className={classes.bottomRight}>
-          <Button title='🎉 Create my event'/>
+          <Box>
+            <Link to='/event/create' className={classes.createNew}>
+              <Button title='🎉 Create my event'/>
+            </Link>
+          </Box>
         </Box>
       </Box>
     </Box>
