@@ -11,12 +11,14 @@ export const EventCreate = () => {
   return(
     <Box>
       <Box className={classes.eventCreateHeader}>
-      <Typography variant='h6'><Link to='/' className={classes.cancel}>Cancel</Link></Typography>
+      <Typography variant='h6'><Link to='/' className={classes.button}>Cancel</Link></Typography>
         <Typography variant='h2' fontWeight={700} color='#250d57'>Create your Event</Typography>
       </Box>
       <Forms />
       <Box className={classes.createButton}>
-        <Button title='Next' width={1}/>
+        <Link to='/event/page' className={classes.button}>
+          <Button title='Next' width={1}/>
+        </Link>
       </Box>
     </Box>
   )

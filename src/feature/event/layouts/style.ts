@@ -96,7 +96,7 @@ export const useStyles = makeStyles({
     width: '30%',
     gap: '10px'
   },
-  cancel: {
+  button: {
     textDecoration: 'none',
     color: '#919191',
   },
@@ -105,5 +105,20 @@ export const useStyles = makeStyles({
     padding: '50px 0',
     alignItems: 'center',
     justifyContent: 'center',
+  },
+  eventPage: {
+    display: 'grid',
+    width: '100vw',
+    height: '100vh',
+    gridTemplateColumns: '1fr 1fr',
+    justifyItems: 'center',
+    alignItems: 'center',
+    gridGap: '50px'
+  },
+  eventImage: {
+    justifySelf: 'start',
+  },
+  eventDescription: {
+    justifySelf: 'end',
   }
 })
